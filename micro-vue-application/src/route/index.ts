@@ -5,7 +5,7 @@ const routes = [
     path: '/',
     name: 'Layout',
     redirect: '/home',
-    component: () => import(/* webpackChunkName: "home" */ '@/Layout/index.vue'),
+    component: () => import(/* webpackChunkName: "home" */ '@/components/Layout/index.vue'),
     meta: {
       title: '根路由',
     },

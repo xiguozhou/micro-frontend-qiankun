@@ -15,7 +15,7 @@ export default defineConfig({
     Components({
       resolvers: [ElementPlusResolver()],
     }),
-    qiankun('app-vue', {
+    qiankun('vueApp', {
       // 微应用名字，与主应用注册的微应用名字保持一致
       useDevMode: true,
     }),
@@ -32,10 +32,9 @@ export default defineConfig({
     headers: {
       "Access-Control-Allow-Origin": "*",
     },
-    host: "0.0.0.0", // ip
-    port: 7001,
-    origin: "http://localhost:7001",
-   
+    host: "0.0.0.0",
+    port: 8080,
+    strictPort: true, // 端口被占用时报错，不自动切换
   },
 })
 
