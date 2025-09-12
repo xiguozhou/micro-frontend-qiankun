@@ -1,5 +1,7 @@
 import { createApp } from 'vue'
 import App from './App.vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 import { registerMicroApps, start } from 'qiankun';
 
 registerMicroApps([
@@ -14,14 +16,10 @@ registerMicroApps([
     entry: '//localhost:8080',
     container: '#container',
     activeRule: '/app-vue',
-  },
-  {
-    name: 'angularApp',
-    entry: '//localhost:4200',
-    container: '#container',
-    activeRule: '/app-angular',
-  },
+  }
 ]);
 // 启动 qiankun
 start();
-createApp(App).mount('#app')
+const app = createApp(App)
+app.use(ElementPlus)
+app.mount('#app')
