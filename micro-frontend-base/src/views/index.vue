@@ -7,7 +7,7 @@
                 <el-menu-item index="/main/second" @clikc="gotoUrl('/main/second')">子应用2</el-menu-item>
             </el-menu>
         </el-header>
-        <div id="page-main-container">
+        <div id="container">
             <RouterView></RouterView>
         </div>
     </el-container>

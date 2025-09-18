@@ -34,7 +34,7 @@ export default defineConfig({
     },
     host: "0.0.0.0",
     port: 8080,
-    strictPort: true, // 端口被占用时报错，不自动切换
+    strictPort: true, // 端口被占用时报错，不自动切换。切换了会找不到子应用
   },
 })
 

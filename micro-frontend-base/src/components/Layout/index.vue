@@ -7,7 +7,7 @@
                 <el-menu-item index="/app-react/index" @clikc="gotoUrl('/app-react/index')">子应用2</el-menu-item>
             </el-menu>
         </el-header>
-        <div id="page-main-container">
+        <div id="sub-container">
             <RouterView></RouterView>
         </div>
     </el-container>
